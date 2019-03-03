@@ -5,8 +5,8 @@ const ouput = document.querySelector('.output');
 let input = document.querySelector('#requestInput');
 
 document.querySelector('.butt').addEventListener('click', ()=>{
+  ouput.innerHTML = "";
   getData(input.value);
-
 })
 
 function getData(request)
@@ -36,4 +36,6 @@ function getData(request)
       });      
     }
    );
+
+   
 }
